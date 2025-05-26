@@ -23,7 +23,7 @@
     </properties>
 
     <modules>
-        <module>base</module>
+        <module>noobchain</module>
     </modules>
 
     <build>
