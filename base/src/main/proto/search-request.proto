@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package net.dotevolve.base.data;
+
+option java_outer_classname = "PaginationProto";
+
+
+message Pagination {
+  optional string startIndex = 1;
+  optional int32 totalResult = 2;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package net.dotevolve.base.data;
+
+option java_outer_classname = "DbEntityProto";
+
+enum LifeTimeStateEnum{
+  ACTIVE = 0;
+  DELETED = 1;
+}
+message EntityMetaData {
+  optional string createdAt = 1;
+  optional string updatedAt = 2;
+  optional LifeTimeStateEnum state = 3;
+  optional int32 version = 4;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package net.dotevolve.base.data;
+
+option java_outer_classname = "AccountProto";
+
+message Accounts {
+  repeated Account account = 1;
+}
+
+message Account {
+
+  optional int32 id = 1;
+  optional string number = 2;
+  optional int32 customer_id = 3;
+
+}
