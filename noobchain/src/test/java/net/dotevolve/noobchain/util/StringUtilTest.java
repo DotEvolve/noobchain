@@ -36,24 +36,24 @@ class StringUtilTest {
     }
 
     @Test
-    @DisplayName("GetDificultyString returns correct string for positive difficulty")
-    void getDificultyStringReturnsCorrectString() {
+    @DisplayName("GetDifficultyString returns correct string for positive difficulty")
+    void getDifficultyStringReturnsCorrectString() {
         int difficulty = 5;
         String expectedString = "00000";
         assertEquals(expectedString, StringUtil.getDificultyString(difficulty));
     }
 
     @Test
-    @DisplayName("GetDificultyString returns empty string for zero difficulty")
-    void getDificultyStringReturnsEmptyStringForZeroDifficulty() {
+    @DisplayName("GetDifficultyString returns empty string for zero difficulty")
+    void getDifficultyStringReturnsEmptyStringForZeroDifficulty() {
         int difficulty = 0;
         String expectedString = "";
         assertEquals(expectedString, StringUtil.getDificultyString(difficulty));
     }
 
     @Test
-    @DisplayName("GetDificultyString throws NegativeArraySizeException for negative difficulty")
-    void getDificultyStringThrowsExceptionForNegativeDifficulty() {
+    @DisplayName("GetDifficultyString throws NegativeArraySizeException for negative difficulty")
+    void getDifficultyStringThrowsExceptionForNegativeDifficulty() {
         int difficulty = -1;
         assertThrows(NegativeArraySizeException.class, () -> StringUtil.getDificultyString(difficulty));
     }
