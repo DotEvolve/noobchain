@@ -12,8 +12,8 @@ public class NoobChain {
 
     private static final Logger logger = LoggerFactory.getLogger(NoobChain.class);
 
-    private static final List<Block> blockchain = new ArrayList<>();
-    private static final int DIFFICULTY = 5;
+    protected static final List<Block> blockchain = new ArrayList<>();
+    protected static final int DIFFICULTY = 5;
 
     public static void main(String[] args) {
         //add our blocks to the blockchain ArrayList:
